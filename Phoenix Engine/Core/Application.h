@@ -17,6 +17,8 @@ namespace Core
 	class Application
 	{
 	public:
+		static Camera2D m_camera;
+
 		Application(const AppSpesifications& spesifications = AppSpesifications());
 		virtual ~Application();
 
@@ -27,7 +29,6 @@ namespace Core
 	private:
 		AppSpesifications m_appSpesifications;
 		Scene* m_scene;
-		Camera2D m_camera;
 
 #if _DEBUG
 		bool m_inEditor = false;

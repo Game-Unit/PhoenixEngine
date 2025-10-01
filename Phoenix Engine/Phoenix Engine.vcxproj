@@ -134,7 +134,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CameraMovement.h" />
     <ClInclude Include="Core\Application.h" />
+    <ClInclude Include="Falling Sand\Element.h" />
     <ClInclude Include="Core\External\dependencies\include\extras\FA6FreeSolidFontData.h" />
     <ClInclude Include="Core\External\dependencies\include\extras\IconsFontAwesome6.h" />
     <ClInclude Include="Core\External\dependencies\include\imconfig.h" />
@@ -146,8 +148,11 @@
     <ClInclude Include="Core\External\dependencies\include\imstb_truetype.h" />
     <ClInclude Include="Core\External\dependencies\include\rlImGui.h" />
     <ClInclude Include="Core\External\dependencies\include\rlImGuiColors.h" />
+    <ClInclude Include="Falling Sand\Gass.h" />
+    <ClInclude Include="Falling Sand\Liquid.h" />
     <ClInclude Include="Core\Scene.h" />
     <ClInclude Include="Core\Debug.h" />
+    <ClInclude Include="Falling Sand\Solid.h" />
     <ClInclude Include="dependencies\include\extras\FA6FreeSolidFontData.h" />
     <ClInclude Include="dependencies\include\extras\IconsFontAwesome6.h" />
     <ClInclude Include="dependencies\include\imconfig.h" />
@@ -161,8 +166,10 @@
     <ClInclude Include="dependencies\include\rlImGuiColors.h" />
     <ClInclude Include="EditorScene.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="Falling Sand\Grid.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CameraMovement.cpp" />
     <ClCompile Include="Core\Application.cpp" />
     <ClCompile Include="Core\External\imgui.cpp" />
     <ClCompile Include="Core\External\imgui_demo.cpp" />
@@ -173,6 +180,7 @@
     <ClCompile Include="Core\Debug.cpp" />
     <ClCompile Include="EditorScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="Falling Sand\Grid.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

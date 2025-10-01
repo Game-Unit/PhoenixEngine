@@ -9,14 +9,14 @@
 
 #include <iostream>
 
+Camera2D Core::Application::m_camera = Camera2D();
+
 Core::Application::Application(const AppSpesifications& spesifications) : m_appSpesifications(spesifications)
-{
-	m_camera = Camera2D();
+{	
 }
 
 Core::Application::~Application()
 {
-
 }
 
 void Core::Application::Run()
@@ -50,17 +50,17 @@ void Core::Application::Run()
 
 		ClearBackground(WHITE);
 
-		// ImGui
-		rlImGuiBegin();
-		m_scene->OnImGuiRender();
-		rlImGuiEnd();
-
 		// Raylib Camera
 		BeginMode2D(m_camera);
 
 		m_scene->OnUpdate();
 
 		EndMode2D();
+
+		// ImGui
+		rlImGuiBegin();
+		m_scene->OnImGuiRender();
+		rlImGuiEnd();
 
 #if _DEBUG
 		if (IsKeyPressed(KEY_TAB))
@@ -70,14 +70,12 @@ void Core::Application::Run()
 				GameScene gameScene;
 				SetScene(gameScene);
 				m_inEditor = false;
-				Debug::Log("Game");
 			}
 			else
 			{
 				EditorScene EditorScene;
 				SetScene(EditorScene);
 				m_inEditor = true;
-				Debug::Log("Editor");
 			}
 		}
 #endif

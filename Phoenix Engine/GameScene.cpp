@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "raylib.h"
 
 void GameScene::OnStart()
 {

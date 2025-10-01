@@ -28,6 +28,30 @@
     <Filter Include="Application\Source">
       <UniqueIdentifier>{a5948ef2-c6b9-4cb3-820d-d09a5e8cd8be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Application\Editor">
+      <UniqueIdentifier>{eabc4971-bc9c-4085-b9c2-00ba44c54cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Editor\Header">
+      <UniqueIdentifier>{e7afe140-3852-4854-b081-489696c32c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Editor\Source">
+      <UniqueIdentifier>{234d28eb-ba72-4d6f-974e-c9d5e5450c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Falling Sand">
+      <UniqueIdentifier>{64d9d846-74cb-4c96-8ddc-ead3b1f65cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Falling Sand\Elements">
+      <UniqueIdentifier>{8f246374-efa4-4988-871d-03f829d50f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Falling Sand\Elements\Solid">
+      <UniqueIdentifier>{ac8dfbb2-de70-452b-96c4-70fafe713997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Falling Sand\Elements\Liquid">
+      <UniqueIdentifier>{f24304b1-c174-4626-a90e-01ec3f5e29f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Falling Sand\Elements\Gass">
+      <UniqueIdentifier>{8eee7fc1-531a-4271-922b-05ef910d69a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -112,7 +136,25 @@
       <Filter>Application\Header</Filter>
     </ClInclude>
     <ClInclude Include="EditorScene.h">
-      <Filter>Application\Header</Filter>
+      <Filter>Application\Editor\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraMovement.h">
+      <Filter>Application\Editor\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Grid.h">
+      <Filter>Application\Falling Sand</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Element.h">
+      <Filter>Application\Falling Sand\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Liquid.h">
+      <Filter>Application\Falling Sand\Elements\Liquid</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Gass.h">
+      <Filter>Application\Falling Sand\Elements\Gass</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Solid.h">
+      <Filter>Application\Falling Sand\Elements\Solid</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -147,7 +189,13 @@
       <Filter>Application\Source</Filter>
     </ClCompile>
     <ClCompile Include="EditorScene.cpp">
-      <Filter>Application\Source</Filter>
+      <Filter>Application\Editor\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraMovement.cpp">
+      <Filter>Application\Editor\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Falling Sand\Grid.cpp">
+      <Filter>Application\Falling Sand</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

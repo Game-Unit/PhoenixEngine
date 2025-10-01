@@ -1,5 +1,8 @@
 #include "Core/Application.h"
 #include "GameScene.h"
+#if _DEBUG
+#include "EditorScene.h"
+#endif
 
 #if !_DEBUG
 #define NOGDI           
@@ -16,7 +19,11 @@
 	LPSTR lpCmdLine, int nCmdShow)
 #endif
 	{
+#if !_DEBUG
 		GameScene scene;
+#else
+		EditorScene scene;
+#endif
 
 		Core::Application app;
 		app.SetScene(scene);
