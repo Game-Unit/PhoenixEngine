@@ -1,5 +1,11 @@
-#include "Application.h"
+#include "Core/Application.h"
+#include "GameScene.h"
+
+#if !_DEBUG
+#define NOGDI           
+#define NOUSER  
 #include <Windows.h>
+#endif
 
 #if _DEBUG
 #pragma comment(linker, "/SUBSYSTEM:CONSOLE")
@@ -10,6 +16,9 @@
 	LPSTR lpCmdLine, int nCmdShow)
 #endif
 	{
-	Core::Application app;
-	app.Run();
+		GameScene scene;
+
+		Core::Application app;
+		app.SetScene(scene);
+		app.Run();
 	}

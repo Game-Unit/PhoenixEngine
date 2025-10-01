@@ -1,117 +1,153 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="External">
+      <UniqueIdentifier>{c715c280-94e3-4b50-ba54-cea0658b65a1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="External\Source">
+      <UniqueIdentifier>{fb135302-2072-4cd6-94e7-5f1a7b85700d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="External\Header">
+      <UniqueIdentifier>{f2db4c03-2df3-4b05-8581-8cd779bccfdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c3ab7533-63df-4f84-88dc-e3cb5f301cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{ede6cd7d-290e-4ead-9c63-f5f018e37c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Header">
+      <UniqueIdentifier>{b30c259a-75a5-4ee9-9f16-533535e49644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Source">
+      <UniqueIdentifier>{7ebf81f9-01c2-4745-9173-c61b1a4374e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Header">
+      <UniqueIdentifier>{a512cc91-e9e9-4291-99d1-55c41ac99e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Source">
+      <UniqueIdentifier>{a5948ef2-c6b9-4cb3-820d-d09a5e8cd8be}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dependencies\include\extras\FA6FreeSolidFontData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\extras\IconsFontAwesome6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imgui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imgui_impl_raylib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imgui_internal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imstb_rectpack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imstb_textedit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\imstb_truetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\rlImGui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\rlImGuiColors.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imgui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imgui_impl_raylib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imgui_internal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imstb_rectpack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imstb_textedit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\imstb_truetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\rlImGui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\External\dependencies\include\rlImGuiColors.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Core\External\dependencies\include\extras\FA6FreeSolidFontData.h">
-      <Filter>Header Files</Filter>
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\extras\FA6FreeSolidFontData.h">
+      <Filter>External\Header</Filter>
     </ClInclude>
     <ClInclude Include="Core\External\dependencies\include\extras\IconsFontAwesome6.h">
-      <Filter>Header Files</Filter>
+      <Filter>External\Header</Filter>
     </ClInclude>
-    <ClInclude Include="Application.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="dependencies\include\extras\IconsFontAwesome6.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imconfig.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imconfig.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imgui.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imgui.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imgui_impl_raylib.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imgui_impl_raylib.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imgui_internal.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imgui_internal.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imstb_rectpack.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imstb_rectpack.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imstb_textedit.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imstb_textedit.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\imstb_truetype.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\imstb_truetype.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\rlImGui.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\rlImGui.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\rlImGuiColors.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\rlImGuiColors.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Scene.h">
+      <Filter>Core\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Application.h">
+      <Filter>Core\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debug.h">
+      <Filter>Core\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Application\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorScene.h">
+      <Filter>Application\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Core\External\imgui.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>External\Source</Filter>
     </ClCompile>
     <ClCompile Include="Core\External\imgui_demo.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>External\Source</Filter>
     </ClCompile>
     <ClCompile Include="Core\External\imgui_draw.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>External\Source</Filter>
     </ClCompile>
     <ClCompile Include="Core\External\imgui_tables.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>External\Source</Filter>
     </ClCompile>
     <ClCompile Include="Core\External\imgui_widgets.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>External\Source</Filter>
     </ClCompile>
     <ClCompile Include="Core\External\rlImGui.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>External\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Application.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Core\Debug.cpp">
+      <Filter>Core\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Application.cpp">
+      <Filter>Core\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Application\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Application\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorScene.cpp">
+      <Filter>Application\Source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

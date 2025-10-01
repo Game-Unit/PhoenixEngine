@@ -1,12 +1,15 @@
 #pragma once
 
+#include "raylib.h"
+#include "Scene.h"
+
 #include <string>
 
 namespace Core
 {
 	struct AppSpesifications
 	{
-		std::string Name = "Application";
+		std::string name = "Application";
 		int Width = 1280;
 		int Height = 720;
 	};
@@ -18,12 +21,16 @@ namespace Core
 		virtual ~Application();
 
 		void Run();
-		void OnUpdate();
-		void OnRender();
-		void OnImGuiRender();
+
+		void SetScene(Scene& scene) { m_scene = &scene; }
 
 	private:
-		AppSpesifications m_Spesifications;
+		AppSpesifications m_appSpesifications;
+		Scene* m_scene;
 		Camera2D m_camera;
+
+#if _DEBUG
+		bool m_inEditor = false;
+#endif
 	};
 }
