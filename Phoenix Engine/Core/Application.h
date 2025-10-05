@@ -31,7 +31,7 @@ namespace Core
 		Scene* m_scene;
 
 #if _DEBUG
-		bool m_inEditor = false;
+		bool m_inEditor = true;
 #endif
 	};
 }

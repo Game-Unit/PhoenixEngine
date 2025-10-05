@@ -2,10 +2,10 @@
 
 #include <string>
 
-#define RESET   "\033[0m"
-#define GREEN   "\033[32m"
-#define YELLOW  "\033[33m"
-#define RED     "\033[31m"
+#define D_RESET   "\033[0m"
+#define D_GREEN   "\033[32m"
+#define D_YELLOW  "\033[33m"
+#define D_RED     "\033[31m"
 
 namespace Core
 {

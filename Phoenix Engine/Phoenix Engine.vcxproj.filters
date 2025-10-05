@@ -156,6 +156,27 @@
     <ClInclude Include="Falling Sand\Solid.h">
       <Filter>Application\Falling Sand\Elements\Solid</Filter>
     </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\implot.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\External\dependencies\include\implot_internal.h">
+      <Filter>External\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\DrawingTool.h">
+      <Filter>Application\Falling Sand</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Random.h">
+      <Filter>Core\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Sand.h">
+      <Filter>Application\Falling Sand\Elements\Solid</Filter>
+    </ClInclude>
+    <ClInclude Include="Falling Sand\Rock.h">
+      <Filter>Application\Falling Sand\Elements\Solid</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math.h">
+      <Filter>Core\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\External\imgui.cpp">
@@ -185,9 +206,6 @@
     <ClCompile Include="GameScene.cpp">
       <Filter>Application\Source</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Application\Source</Filter>
-    </ClCompile>
     <ClCompile Include="EditorScene.cpp">
       <Filter>Application\Editor\Source</Filter>
     </ClCompile>
@@ -196,6 +214,21 @@
     </ClCompile>
     <ClCompile Include="Falling Sand\Grid.cpp">
       <Filter>Application\Falling Sand</Filter>
+    </ClCompile>
+    <ClCompile Include="Falling Sand\Element.cpp">
+      <Filter>Application\Falling Sand\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Falling Sand\DrawingTool.cpp">
+      <Filter>Application\Falling Sand</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Random.cpp">
+      <Filter>Core\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\main.cpp">
+      <Filter>Core\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math.cpp">
+      <Filter>Core\Source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

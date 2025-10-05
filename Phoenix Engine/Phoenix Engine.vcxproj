@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -82,6 +82,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -98,6 +100,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -112,6 +116,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -128,6 +134,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -136,6 +144,9 @@
   <ItemGroup>
     <ClInclude Include="CameraMovement.h" />
     <ClInclude Include="Core\Application.h" />
+    <ClInclude Include="Core\External\dependencies\include\implot.h" />
+    <ClInclude Include="Core\External\dependencies\include\implot_internal.h" />
+    <ClInclude Include="Falling Sand\DrawingTool.h" />
     <ClInclude Include="Falling Sand\Element.h" />
     <ClInclude Include="Core\External\dependencies\include\extras\FA6FreeSolidFontData.h" />
     <ClInclude Include="Core\External\dependencies\include\extras\IconsFontAwesome6.h" />
@@ -152,6 +163,7 @@
     <ClInclude Include="Falling Sand\Liquid.h" />
     <ClInclude Include="Core\Scene.h" />
     <ClInclude Include="Core\Debug.h" />
+    <ClInclude Include="Falling Sand\Sand.h" />
     <ClInclude Include="Falling Sand\Solid.h" />
     <ClInclude Include="dependencies\include\extras\FA6FreeSolidFontData.h" />
     <ClInclude Include="dependencies\include\extras\IconsFontAwesome6.h" />
@@ -167,10 +179,15 @@
     <ClInclude Include="EditorScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Falling Sand\Grid.h" />
+    <ClInclude Include="Core\Random.h" />
+    <ClInclude Include="Falling Sand\Rock.h" />
+    <ClInclude Include="Core\Math.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CameraMovement.cpp" />
     <ClCompile Include="Core\Application.cpp" />
+    <ClCompile Include="Falling Sand\DrawingTool.cpp" />
+    <ClCompile Include="Falling Sand\Element.cpp" />
     <ClCompile Include="Core\External\imgui.cpp" />
     <ClCompile Include="Core\External\imgui_demo.cpp" />
     <ClCompile Include="Core\External\imgui_draw.cpp" />
@@ -181,7 +198,9 @@
     <ClCompile Include="EditorScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Falling Sand\Grid.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Core\main.cpp" />
+    <ClCompile Include="Core\Random.cpp" />
+    <ClCompile Include="Core\Math.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

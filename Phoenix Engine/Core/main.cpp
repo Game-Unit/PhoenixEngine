@@ -1,7 +1,7 @@
-#include "Core/Application.h"
-#include "GameScene.h"
+#include "Application.h"
+#include "../GameScene.h"
 #if _DEBUG
-#include "EditorScene.h"
+#include "../EditorScene.h"
 #endif
 
 #if !_DEBUG

@@ -17,17 +17,27 @@ namespace FallingSand
 		~Grid();
 
 		void Update();
+		void Render();
 
-		void SetPosition(float x, float y) { m_positionX = x; m_PositionY = y; }
+		void SetPosition(float x, float y) { m_positionX = x; m_positionY = y; }
 		void SetCellSize(float size) { m_cellSize = size; }
 		void Debug(bool v) { m_debug = v; }
 		void SetDebugColor(const Color& color) { m_debugColor = color; }
 
+		void AddElement(Element* element);
+		void ClearElement(int x, int y);
+		Element* GetElement(int x, int y);
+
+		Vector2 WorldToGrid(Vector2 pos);
+
+		int GetColumns() { return m_columns; }
+		int GetRows() { return m_rows; }
+
 	private:
-		std::vector<std::vector<Element>> m_grid;
+		std::vector<std::vector<Element*>> m_grid;
 
 		float m_positionX;
-		float m_PositionY;
+		float m_positionY;
 		int m_cellSize;
 
 		int m_columns;
